@@ -1,0 +1,19 @@
+<!-- Team Members Row -->
+<div class="row">
+    <div class="col-lg-12">
+        <h2 class="page-header">The Team</h2>
+    </div>
+    {{#employees}}
+    <div class="col-lg-4 col-sm-6 text-center">
+        <a href="/{{id}}"><img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="" /></a>
+        {{#document}}
+            <h3>{{FirstName}} {{LastName}}
+                <small>{{Title}}</small>
+            </h3>
+            {{#Address}}
+            <p>{{Line1}}</p>
+            {{/Address}}
+        {{/document}}
+    </div>
+    {{/employees}}
+</div>
