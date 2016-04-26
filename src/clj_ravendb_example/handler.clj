@@ -20,7 +20,7 @@
 (defn load-employees
   []
   #(let [client (rdb/client ravendb-url ravendb-database {:ssl-insecure? true :oauth-url oauth-url :api-key api-key})]
-     (:results (rdb/query-index client {:index "Raven/DocumentsByEntityName" :Tag "Employees"}))))
+     (:results (rdb/query-index client {:index "Raven/DocumentsByEntityName" :query {:Tag "Employees"}}))))
 
 (defn employee-view
   [populate-with-fn]

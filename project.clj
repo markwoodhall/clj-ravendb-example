@@ -4,7 +4,7 @@
   :min-lein-version "2.0.0"
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [compojure "1.3.1"]
-                 [clj-ravendb "0.9.0"]
+                 [clj-ravendb "0.13.0"]
                  [cheshire "5.4.0"]
                  [de.ubercode.clostache/clostache "1.4.0"]
                  [ring/ring-defaults "0.1.2"]]
